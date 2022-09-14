@@ -1,0 +1,157 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(./assets/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 100% auto;
+    background-color: #121214;
+
+    font-size: 62.5%;
+}
+
+body * {
+    font-family: 'Inter', sans-serif;
+}
+
+header {
+    padding-top: 3.2rem;
+    height: calc(12rem + 3.2rem);
+}
+
+header div {
+    width: 12rem;
+    margin: auto;
+
+    background-image: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%);
+    border-radius: 50%;
+
+    display: flex;
+    padding: 0.4rem;
+
+    transition: transform .3s;
+}
+
+header div:hover {
+    transform: scale(1.1);
+}
+
+header div img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+main {
+    max-width: 58rem;
+    width: 90%;
+    margin: 3.2rem auto;
+
+    display: grid;
+    gap: 2.4rem;
+
+}
+
+section {
+    color: #FFFFFF;
+    background-image: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%);
+    padding-top: 4px;
+    border-radius: 1rem;
+}
+
+section h2 {
+    font-size: 2.4rem;
+    letter-spacing: -0.47px;
+}
+
+section p {
+    font-size: 1.6rem;
+    letter-spacing: -0.18px;
+
+    color: #A1A1AA;
+}
+
+section ul {
+    list-style: none;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.6rem;
+
+    margin-top: 2.4rem;
+}
+
+section ul li {
+    transition: transform .3s;
+}
+section ul li:hover {
+    transform: scale(1.1);
+}
+
+section div {
+    background: #2A2634;
+    padding: 3.2rem;
+    padding-top: 2.4rem;
+    border-radius: 0.8rem;
+}
+
+.games-list img {
+    width: 9rem;
+    border-radius: 0.8rem;
+}
+
+.stream-list img {
+    border-radius: 50%;
+    width: 7rem;
+    border: 1px solid #443E54;
+}
+
+/* animation */
+
+header div {
+    animation: topdown .7s .2s backwards;
+}
+
+main section {
+    animation: downtop .7s backwards;
+}
+
+main section:nth-child(1) {
+    animation-delay: 0;
+}
+
+main section:nth-child(2) {
+    animation-delay: .4s;
+}
+
+main section:nth-child(3) {
+    animation-delay: .8s;
+}
+
+@keyframes topdown {
+    0% {
+        opacity: 0;
+        transform: translateY(-3rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+}
+}
+
+@keyframes downtop {
+    0% {
+        opacity: 0;
+        transform: translateY(3rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+}
+
+}
