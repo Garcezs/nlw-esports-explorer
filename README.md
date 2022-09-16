@@ -7,7 +7,7 @@
 
 Projeto construido do evento Next Level Week da Rocketseat.
 
-[Clique aqui para acessar](https://app.rocketseat.com.br/event/nlw-09/explorer/aula-5)
+[Clique aqui para acessar](https://garcezs.github.io/nlw-esports-explorer/)
 
 ## Tecnologias
 
